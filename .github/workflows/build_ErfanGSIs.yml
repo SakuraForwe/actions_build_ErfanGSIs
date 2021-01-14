@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_MI8LITE_V12.0.1.0.QDTCNXM_v12-10.zip/download
-  ROM_NAME: MIUI
+  ROM_URL: https://download.pixelexperience.org/changelog/dipper/PixelExperience_dipper-11.0-20201223-1249-BETA-OFFICIAL.zip/
+  ROM_NAME: Generic Pixel
   TZ: Asia/Shanghai
 
 jobs:
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof final/GSI.zip
+              ./transfer bit final/GSI.zip
 
          
             
